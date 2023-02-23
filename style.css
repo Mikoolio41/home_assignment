@@ -39,10 +39,6 @@ header {
   align-items: center;
 }
 
-.phoneIconMob {
-  display: none;
-}
-
 .phoneLoginNav img {
   padding-right: 3px;
 }
@@ -84,7 +80,6 @@ li > a {
 }
 
 .nav-item:hover {
-  color: white;
   background-color: rgb(139, 0, 139);
 }
 
@@ -158,14 +153,11 @@ li > a {
   justify-content: center;
   align-items: center;
 }
-.separatorMob {
-  display: none;
-}
 
-.sepY:nth-child(n + 1):nth-child(-n + 15) {
-  display: none;
-}
-.sepY:nth-child(n + 65):nth-child(-n + 70) {
+.sepY:nth-child(n + 1):nth-child(-n + 15),
+.sepY:nth-child(n + 65):nth-child(-n + 70),
+.separatorMob,
+.phoneIconMob {
   display: none;
 }
 
@@ -213,26 +205,19 @@ li > a {
 
 /*large tablet styles */
 @media screen and (max-width: 995px) {
-  .sepX:nth-child(n + 1):nth-child(-n + 12) {
-    display: none;
-  }
+  .sepX:nth-child(n + 1):nth-child(-n + 12),
   .sepX:nth-child(n + 60):nth-child(-n + 70) {
     display: none;
   }
 
-  .sepY:nth-child(n + 1):nth-child(-n + 10) {
-    display: flex;
-  }
+  .sepY:nth-child(n + 1):nth-child(-n + 10),
   .sepY:nth-child(n + 65):nth-child(-n + 70) {
     display: flex;
   }
+
   .navbar-toggler {
     border: none;
     font-size: 30px;
-  }
-
-  .navbar-toggler-icon {
-    float: inherit;
   }
 
   .navbarContainer {
@@ -247,11 +232,11 @@ li > a {
   .heroParagraph {
     padding: 0 40px;
   }
-  .number {
-    display: none;
-  }
 
-  .loginDiv {
+  .number,
+  .loginDiv,
+  .thirdPartParagraph,
+  .phoneIconWeb {
     display: none;
   }
 
@@ -262,10 +247,6 @@ li > a {
   .navbarContainer {
     padding: 0;
     order: 3;
-  }
-
-  .thirdPartParagraph {
-    display: none;
   }
 
   .phoneLoginNav {
@@ -281,10 +262,6 @@ li > a {
   .phoneIconMob {
     display: block;
     padding: 0 10px;
-  }
-
-  .phoneIconWeb {
-    display: none;
   }
 
   .cardSectTitles > h2 {
@@ -309,18 +286,14 @@ li > a {
 
 /*medium tablet styles */
 @media screen and (max-width: 738px) {
-  .sepX:nth-child(n + 1):nth-child(-n + 17) {
-    display: none;
-  }
-  .sepX:nth-child(n + 55):nth-child(-n + 70) {
+  .sepX:nth-child(n + 1):nth-child(-n + 17),
+  .sepX:nth-child(n + 55):nth-child(-n + 70),
+  .secondPartParagraph {
     display: none;
   }
 
   .nav-link > a {
     color: white;
-  }
-  .secondPartParagraph {
-    display: none;
   }
 }
 
@@ -366,13 +339,11 @@ li > a {
     padding: 20px 0;
   }
 
-  .middleItems {
-    display: none;
-  }
-
+  .middleItems,
   .separator {
     display: none;
   }
+
   .phoneIconMob {
     height: 35px;
   }
